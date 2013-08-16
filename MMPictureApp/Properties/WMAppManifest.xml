@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment" AppPlatformVersion="7.1">
+  <App xmlns="" ProductID="{b32f646c-19cd-4813-8557-440b486f5089}" Title="MMPictureApp" 
+       RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal"  
+       Author="MMPictureApp author" 
+       BitsPerPixel="32" 
+       Description="Apache Cordova for Windows Phone 7"
+       Publisher="MMPictureApp">
+    
+    <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
+    <Capabilities>
+      <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />   
+    </Capabilities>
+    
+    <Tasks>
+      <DefaultTask Name="_default" NavigationPage="MainPage.xaml" />
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="MMPictureAppToken" TaskName="_default">
+        <TemplateType5>
+          <BackgroundImageURI IsRelative="true" IsResource="false">Background.png</BackgroundImageURI>
+          <Count>0</Count>
+          <Title>MMPictureApp</Title>
+        </TemplateType5>
+      </PrimaryToken>
+    </Tokens>
+  </App>
+</Deployment>
